@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/qrcode.js"></script>
+	</head>
+	<body>
+		<div id="qrcode"></div>
+		
+		<script>
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+			    text: "个人信息",
+			    width: 512,
+			    height: 512,
+			    colorDark : "green",
+			    colorLight : "#ffffff",
+			    correctLevel : QRCode.CorrectLevel.H
+			});
+		</script>
+	</body>
+</html>

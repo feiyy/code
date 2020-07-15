@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title></title>
-    <script type="text/javascript">
-    	
-   		navigator.geolocation.getCurrentPosition((position)=>{
-			
-			//维度
-			var lat = position.coords.latitude;
-			//经度
-			var lng = position.coords.longitude;
-			
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Df5kztZ3rOcLOonFN1rudtIxm6buhcdA"></script>
+	    <script src="js/qrcode.js"></script>
+	</head>
+	<body>
+		<script>
 			//GPS坐标
-			 const pointBak = new BMap.Point(lng, lat);
+			 const pointBak = new BMap.Point(123.432511, 41.703259);
 			
 			 const convertor = new BMap.Convertor();
 			 
@@ -51,13 +46,7 @@
 				  
 				 
 			 })
-			
-			
-		});
-   		
-    </script>
-</head>
-<body>
-	
-</body>
+			 
+		</script>
+	</body>
 </html>
